@@ -11,7 +11,6 @@ class State extends Component {
     render() {
         return (
             <div>
-                <Country con="India" />
                 <h2>{this.state.myState} is my state.</h2>
                 <button onClick={() => this.setState({myState : 'Rajasthan'})}>Change</button>
                 <button onClick={() => this.setState({myState : 'Gujarat'})}>Refresh</button>
