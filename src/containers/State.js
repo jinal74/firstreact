@@ -1,36 +1,22 @@
+import '../App.js';
 import React, { Component } from 'react';
-import Country from './Country';
 
 class State extends Component {
     constructor (props) {
         super(props);
         this.state = {
-            myState : 'Gujarat'
+            counter : 0
         }
-        console.log("1 constructor")
-    }
-
-    componentDidMount = () => {
-        console.log("3 componentDidMount")
-    }
-
-    componentDidUpdate = (prevProps, prevState) => {
-        if (prevState.myState !== this.state.myState) {
-            console.log("4 componentDidUpdate")
-        }
-    }
-
-    componentWillUnmount = () => {
-        console.log("5 componentWillUnmount")
     }
 
     render() {
-        console.log("2 reander")
         return (
-            <div>
-                <h2>{this.state.myState} is my state.</h2>
-                <button onClick={() => this.setState({myState : 'Rajasthan'})}>Change</button>
-                <button onClick={() => this.setState({myState : 'Gujarat'})}>Refresh</button>
+            <div class="counter">
+                <h1>{this.state.counter}</h1>
+                <div>
+                <button onClick={() => this.setState({counter: this.state.counter - 1})} class="btn1">Decrement</button>
+                <button onClick={() => this.setState({counter: this.state.counter + 1})} class="btn2">Increment</button>
+                </div>
             </div>
         );
     }
