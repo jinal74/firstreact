@@ -1,12 +1,12 @@
 import './App.css';
-import State from './containers/State';
+import Counter from './containers/counter';
 
 
 function App() {
   
   return (
     <>
-      <State />
+      <Counter />
     </>
 
   );
