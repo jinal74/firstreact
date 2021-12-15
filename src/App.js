@@ -1,14 +1,12 @@
 import './App.css';
-import Country from './containers/Country';
-import State from './containers/State';
+import Timer from './containers/timer';
 
 
 function App() {
   
   return (
     <>
-      <Country con="UK" />
-      <State />
+      <Timer />
     </>
 
   );
