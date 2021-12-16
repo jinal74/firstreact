@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Country from './Country';
 
 class State extends Component {
     constructor (props) {
