@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Timer2(props) {
+function TimerFun(props) {
     const [time ,setTime] = useState(new Date());
 
     const tick = () => {
@@ -24,4 +24,4 @@ function Timer2(props) {
     );
 }
 
-export default Timer2;
+export default TimerFun;
