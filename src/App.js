@@ -5,7 +5,7 @@ import TimerFun from './containers/timer2';
 
 function App() {
   
-  return (
+  return ( 
     <>
       <Timer />
       <TimerFun />
