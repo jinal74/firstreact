@@ -15,7 +15,7 @@ function TimerFun(props) {
                     1000
             )
         },
-        [])
+    [])
 
     return (
         <div class="timer">
